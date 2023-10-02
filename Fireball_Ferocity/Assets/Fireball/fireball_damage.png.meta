@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1128d524265f9c841b21888f637bb61d
+guid: d9c8c4858f77bc64da6d4d38b2afd2f0
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -44,7 +44,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fireball_run_0
+      name: fireball_damage_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e6de3c7463ace04aa40aa71ce72834b
-      internalID: 415884233
+      spriteID: a218465492a1f4b418046e7f98d2f40c
+      internalID: -1896136513
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_run_1
+      name: fireball_damage_1
       rect:
         serializedVersion: 2
         x: 160
@@ -158,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69428f834d1763845badf47dc801e37e
-      internalID: -1867393785
+      spriteID: 93441cef91443654cae0985d7c5ebfbd
+      internalID: 1152396455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_run_2
+      name: fireball_damage_2
       rect:
         serializedVersion: 2
         x: 320
@@ -179,35 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 360f70715a4681e4f92450554789a5b6
-      internalID: -135171051
+      spriteID: 31bb36e8278fc1643bb521f0abd58e40
+      internalID: -926798480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_run_3
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 160
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46ea233f89322e74f81453431abc5a9f
-      internalID: 23590486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireball_run_4
+      name: fireball_damage_3
       rect:
         serializedVersion: 2
         x: 0
@@ -221,14 +200,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8e3f564f58eb43499c06fb5184bd263
-      internalID: -1628351372
+      spriteID: b9de8aef32954e24c9987c05262419c4
+      internalID: 402576882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_run_5
+      name: fireball_damage_4
       rect:
         serializedVersion: 2
         x: 160
@@ -242,14 +221,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7c38c352f6fe284fba43c6b813b71ab
-      internalID: -1541729080
+      spriteID: bb1fea0b8d5eca34d8c8aad5d403f209
+      internalID: 480049203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_run_6
+      name: fireball_damage_5
       rect:
         serializedVersion: 2
         x: 320
@@ -263,29 +242,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6de5cca74403beb4eaa72d7e2dc2912b
-      internalID: 319816094
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireball_run_7
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 160
-        height: 160
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c8f03f62b4a047b4c81be17a861254d9
-      internalID: -504294957
+      spriteID: e39e86d92a50ab24d90f30ff3ac938b0
+      internalID: -180451530
       vertices: []
       indices: 
       edges: []
@@ -293,7 +251,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3f185b1875f3a8a42963cfd435f124c4
+    spriteID: 0a5b72c4a7bc3594f8bfa89e0cfa5062
     internalID: 0
     vertices: []
     indices: 
@@ -301,14 +259,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fireball_run_0: 415884233
-      fireball_run_1: -1867393785
-      fireball_run_2: -135171051
-      fireball_run_3: 23590486
-      fireball_run_4: -1628351372
-      fireball_run_5: -1541729080
-      fireball_run_6: 319816094
-      fireball_run_7: -504294957
+      fireball_damage_0: -1896136513
+      fireball_damage_1: 1152396455
+      fireball_damage_2: -926798480
+      fireball_damage_3: 402576882
+      fireball_damage_4: 480049203
+      fireball_damage_5: -180451530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
