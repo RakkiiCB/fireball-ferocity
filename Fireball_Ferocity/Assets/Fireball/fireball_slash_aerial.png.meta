@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d9c8c4858f77bc64da6d4d38b2afd2f0
+guid: 586afa778d90e694aaaacb95af30fdc6
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fireball_damage_0
+      name: fireball_slash_aerial_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
-        width: 160
-        height: 160
+        y: 192
+        width: 240
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a218465492a1f4b418046e7f98d2f40c
-      internalID: -1896136513
+      spriteID: 7e4ee89db232df74b8f5736c0e7b688e
+      internalID: -457322241
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_damage_1
+      name: fireball_slash_aerial_1
       rect:
         serializedVersion: 2
-        x: 160
-        y: 160
-        width: 160
-        height: 160
+        x: 240
+        y: 192
+        width: 240
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93441cef91443654cae0985d7c5ebfbd
-      internalID: 1152396455
+      spriteID: 1400a5fddb04970418253a8f02ec4c83
+      internalID: -1312863011
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_damage_2
+      name: fireball_slash_aerial_2
       rect:
         serializedVersion: 2
-        x: 320
-        y: 160
-        width: 160
-        height: 160
+        x: 480
+        y: 192
+        width: 240
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31bb36e8278fc1643bb521f0abd58e40
-      internalID: -926798480
+      spriteID: bef5e875d1a9d1044a275319c0d4f260
+      internalID: 1120238746
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_damage_3
+      name: fireball_slash_aerial_3
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 192
+        width: 240
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df83c9479803794abe03dd2a16ea970
+      internalID: 624999624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireball_slash_aerial_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 160
-        height: 160
+        width: 240
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9de8aef32954e24c9987c05262419c4
-      internalID: 402576882
+      spriteID: 8a7f5eeb3b6002543b4a5035ccc47fbb
+      internalID: -738792304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_damage_4
+      name: fireball_slash_aerial_5
       rect:
         serializedVersion: 2
-        x: 160
+        x: 240
         y: 0
-        width: 160
-        height: 160
+        width: 240
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb1fea0b8d5eca34d8c8aad5d403f209
-      internalID: 480049203
+      spriteID: 058e587891fe1194998b775c4f763079
+      internalID: -1779942264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_damage_5
+      name: fireball_slash_aerial_6
       rect:
         serializedVersion: 2
-        x: 320
+        x: 480
         y: 0
-        width: 160
-        height: 160
+        width: 240
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,8 +263,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e39e86d92a50ab24d90f30ff3ac938b0
-      internalID: -180451530
+      spriteID: ec6cccec983a8594c9b9016dfa82de37
+      internalID: -89109492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fireball_slash_aerial_7
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 240
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a09304f32e21d41979ff72a7cf4a2a
+      internalID: -1733085254
       vertices: []
       indices: 
       edges: []
@@ -251,7 +293,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 0a5b72c4a7bc3594f8bfa89e0cfa5062
+    spriteID: 45a8b838b02188a4e8589241ca9efc77
     internalID: 0
     vertices: []
     indices: 
@@ -259,12 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fireball_damage_0: -1896136513
-      fireball_damage_1: 1152396455
-      fireball_damage_2: -926798480
-      fireball_damage_3: 402576882
-      fireball_damage_4: 480049203
-      fireball_damage_5: -180451530
+      fireball_slash_aerial_0: -457322241
+      fireball_slash_aerial_1: -1312863011
+      fireball_slash_aerial_2: 1120238746
+      fireball_slash_aerial_3: 624999624
+      fireball_slash_aerial_4: -738792304
+      fireball_slash_aerial_5: -1779942264
+      fireball_slash_aerial_6: -89109492
+      fireball_slash_aerial_7: -1733085254
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
