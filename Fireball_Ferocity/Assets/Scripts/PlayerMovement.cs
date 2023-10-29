@@ -1,4 +1,7 @@
+using System;
+using UnityEditor.Presets;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -48,6 +51,13 @@ public class PlayerMovement : MonoBehaviour
             anim.SetTrigger("land");
             isLanding = true;
         }
+
+        // Handle attacks
+        if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.Z) ||
+            Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.X))
+        {
+            Attack(); 
+        }
     }
 
     private void Jump()
@@ -55,6 +65,26 @@ public class PlayerMovement : MonoBehaviour
         body.velocity = new Vector2(body.velocity.x, speed);
         anim.SetTrigger("jump");
         grounded = false;
+    }
+
+    private void Attack()
+    {
+        //Pick Attack Animation based on if player is in the air
+        if (grounded)
+        {
+            if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.Z))
+                anim.SetTrigger("LightAttackGrounded");
+            else if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.X))
+                anim.SetTrigger("HeavyAttackGrounded");
+        }
+        else
+        {
+            
+            if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.Z))
+                anim.SetTrigger("LightAttackAir");
+            else if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.X))
+                anim.SetTrigger("HeavyAttackAir");
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
