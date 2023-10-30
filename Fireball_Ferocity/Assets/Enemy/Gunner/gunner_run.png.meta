@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f1f3198035cead5478d89dd8ef22f54d
+guid: eaef4e0bbd7f3bb479dde0c1b7132331
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -44,7 +44,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -70,8 +70,8 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
-    textureFormat: 4
+    resizeAlgorithm: 0
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -123,12 +123,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fireball_slash_0
+      name: gunner_run_0
       rect:
         serializedVersion: 2
         x: 0
         y: 180
-        width: 240
+        width: 180
         height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -137,19 +137,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37d243429dd70874daffdd4f60226435
-      internalID: -1248959655
+      spriteID: d30bb1ad0a189ed429ffb1f77f1ec84a
+      internalID: -613141764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_slash_1
+      name: gunner_run_1
       rect:
         serializedVersion: 2
-        x: 240
+        x: 180
         y: 180
-        width: 240
+        width: 180
         height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -158,61 +158,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa1e5093a4f851742a5c6e94ff4f12e4
-      internalID: -1378590819
+      spriteID: bd4850b07148c7c4c8b7851fa053fe8e
+      internalID: -1315766242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_slash_2
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 180
-        width: 240
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 515855a37eee926418ac7ac9f0d5b4e9
-      internalID: 1348339452
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireball_slash_3
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 180
-        width: 240
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03b732c28eeab8a4c8f65238cb3ffd32
-      internalID: 529937944
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireball_slash_4
+      name: gunner_run_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 240
+        width: 180
         height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -221,19 +179,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2cb4def5cbf6b2343824734aeb7b181b
-      internalID: -134816777
+      spriteID: d70dad0245f16e443969d301175ee9e0
+      internalID: 229311107
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fireball_slash_5
+      name: gunner_run_3
       rect:
         serializedVersion: 2
-        x: 240
+        x: 180
         y: 0
-        width: 240
+        width: 180
         height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -242,50 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6133a41a9d3568e4c810f35f923f7abf
-      internalID: 522894722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireball_slash_6
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 240
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7772c91eda48c4e4da52a8d2c327a59a
-      internalID: -383289893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireball_slash_7
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 0
-        width: 240
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d54dda9681a0f9e48880750f0be7e459
-      internalID: -2051947951
+      spriteID: 39a34e8b1d85a304b8d3793de7a9eab5
+      internalID: 1944287455
       vertices: []
       indices: 
       edges: []
@@ -293,7 +209,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 51f2b270f2a76a84e81667c8c713e36f
+    spriteID: 6a32ab67c76e0a34987bcdf28251c896
     internalID: 0
     vertices: []
     indices: 
@@ -301,14 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      fireball_slash_0: -1248959655
-      fireball_slash_1: -1378590819
-      fireball_slash_2: 1348339452
-      fireball_slash_3: 529937944
-      fireball_slash_4: -134816777
-      fireball_slash_5: 522894722
-      fireball_slash_6: -383289893
-      fireball_slash_7: -2051947951
+      gunner_run_0: -613141764
+      gunner_run_1: -1315766242
+      gunner_run_2: 229311107
+      gunner_run_3: 1944287455
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
