@@ -60,7 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\CharacterController2D.cs" />
     <Compile Include="Assets\Scripts\EnemyGunnerMovement.cs" />
-    <Compile Include="Assets\Scripts\ColoredFlash.cs" />
+    <Compile Include="Assets\Scripts\PlayerTempInvincibility.cs" />
     <Compile Include="Assets\Scripts\CameraFollowPlayer.cs" />
     <Compile Include="Assets\Scripts\EnemyHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerHealth.cs" />

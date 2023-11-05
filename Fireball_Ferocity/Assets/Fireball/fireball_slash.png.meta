@@ -130,8 +130,8 @@ TextureImporter:
         y: 180
         width: 240
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.28, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -151,8 +151,8 @@ TextureImporter:
         y: 180
         width: 240
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.28, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,8 +172,8 @@ TextureImporter:
         y: 180
         width: 240
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.28, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,8 +193,8 @@ TextureImporter:
         y: 180
         width: 240
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.28, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,8 +214,8 @@ TextureImporter:
         y: 0
         width: 240
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.28, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,8 +235,8 @@ TextureImporter:
         y: 0
         width: 240
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.28, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,8 +256,8 @@ TextureImporter:
         y: 0
         width: 240
         height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.28, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,27 +265,6 @@ TextureImporter:
       bones: []
       spriteID: 7772c91eda48c4e4da52a8d2c327a59a
       internalID: -383289893
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fireball_slash_7
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 0
-        width: 240
-        height: 180
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d54dda9681a0f9e48880750f0be7e459
-      internalID: -2051947951
       vertices: []
       indices: 
       edges: []
@@ -308,7 +287,6 @@ TextureImporter:
       fireball_slash_4: -134816777
       fireball_slash_5: 522894722
       fireball_slash_6: -383289893
-      fireball_slash_7: -2051947951
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

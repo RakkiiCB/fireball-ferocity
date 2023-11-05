@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyGunnerBullet : MonoBehaviour
 {
-    private GameObject player;
     private Rigidbody2D rb;
     public float damage;
     public float timer;
