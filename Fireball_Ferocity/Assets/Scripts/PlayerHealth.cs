@@ -19,5 +19,11 @@ public class playerHealth : MonoBehaviour
     void Update()
     {
         healthBar.fillAmount = Mathf.Clamp(health / maxHealth, 0, 1);
+
+        // Check if health is zero or less, then destroy the object.
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }
