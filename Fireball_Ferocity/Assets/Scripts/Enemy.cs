@@ -35,24 +35,28 @@ public class Enemy : MonoBehaviour
             // Trigger the "TakeDamage" animation if the Animator is not null
             if (animator != null)
             {
-                animator.SetTrigger("TakeDamageTrigger");
+                animator.SetTrigger("gunner_damage");
             }
         }
     }
 
     private void Die()
     {
-        isAlive = false;
-        Debug.Log("Enemy is dead");
-        // Add any other logic here, such as playing death animations, scoring points, etc.
+        //isAlive = false;
+        //Debug.Log("Enemy is dead");
+        //// Add any other logic here, such as playing death animations, scoring points, etc.
 
-        // You might want to set an "isDead" parameter in the Animator to trigger a death animation
-        if (animator != null)
-        {
-            animator.SetBool("isDead", true);
-        }
+        //// You might want to set an "isDead" parameter in the Animator to trigger a death animation
+        //if (animator != null)
+        //{
+        //    animator.SetBool("gunner_death", true);
+        //}
 
-        // Destroy the GameObject after a delay or animation is finished
-        Destroy(gameObject, 2.0f); // This example destroys the GameObject after 2 seconds
+        //// Destroy the GameObject after a delay or animation is finished
+        //Destroy(gameObject, 2.0f); // This example destroys the GameObject after 2 seconds
+
+        animator.SetBool("gunner_death", true);
+        Destroy(gameObject, 0.5f);
+
     }
 }
