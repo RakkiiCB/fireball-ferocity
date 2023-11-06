@@ -31,15 +31,18 @@ public class EnemyGunnerBullet : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            if (other.gameObject.GetComponent<PlayerTempInvincibility>().invincibilityTime < 0)
-            {
-                other.gameObject.GetComponent<PlayerHealth>().health -= damage;
-                other.gameObject.GetComponent<PlayerTempInvincibility>().invincibilityTime = 3;
-                Debug.Log("bullet hit player");
-                Debug.Log(other.gameObject.GetComponent<PlayerHealth>().health);
-            }
-            
+            other.gameObject.GetComponent<PlayerHealth>().health -= damage;
             Destroy(gameObject);
+            //if (other.gameObject.GetComponent<PlayerTempInvincibility>().invincibilityTime < 0)
+            //{
+                
+            //    other.gameObject.GetComponent<PlayerTempInvincibility>().invincibilityTime = 3;
+            //    Debug.Log("bullet hit player");
+            //    Debug.Log(other.gameObject.GetComponent<PlayerHealth>().health);
+                
+            //}
+            
+            
         }
     }
 }
