@@ -20,7 +20,7 @@ public class CameraFollowPlayer : MonoBehaviour
         // Calculate the target position for the camera
         Vector3 targetPosition = player.position + offset;
 
-        // Interpolate the current camera position towards the target position for smooth follow
-        transform.position = Vector3.Lerp(transform.position, targetPosition, smoothing * Time.deltaTime);
+        // Update the camera position directly to center on the player
+        transform.position = targetPosition;
     }
 }
