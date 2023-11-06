@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private bool grounded;
     private bool isFalling; // Parameter to track falling
     private bool isLanding; // Parameter to track landing
+    private bool isHurt; // Parameter to track if player is taking damage
 
     private void Awake()
     {
