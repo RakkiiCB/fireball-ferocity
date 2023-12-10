@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5c90f995170a29948ba6544a23b0ee70
+guid: b98b6088dd1e1434881cf23e168c1728
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -72,20 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,85 +110,127 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gunner_damage_placeholder_0
+      name: effects_explosion_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 180
-        width: 180
-        height: 180
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03d4a20f68f1c6d408c433d7838c239a
-      internalID: -1742851362
+      spriteID: fe252dae4c0561d4d8b803a159a1d28a
+      internalID: 1944787243
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gunner_damage_placeholder_1
+      name: effects_explosion_1
       rect:
         serializedVersion: 2
-        x: 180
-        y: 180
-        width: 180
-        height: 180
+        x: 200
+        y: 200
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3284970f61314c44882b3f88e833e653
-      internalID: 1938806559
+      spriteID: c9795bea19d630747b119f550e47181a
+      internalID: -453822090
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gunner_damage_placeholder_2
+      name: effects_explosion_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 200
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8030776e2f95404897da4b5d4adeec0
+      internalID: 238042535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effects_explosion_3
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 180
-        height: 180
+        width: 200
+        height: 200
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d500915a6fc2bb54d8aae473b03a8d1f
-      internalID: 877409341
+      spriteID: bd67774cb1699324f84e2e3fbfed5467
+      internalID: 1330207876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: gunner_damage_placeholder_3
+      name: effects_explosion_4
       rect:
         serializedVersion: 2
-        x: 180
+        x: 200
         y: 0
-        width: 180
-        height: 180
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c7d57a7ac204c4489d35364c2542cfa
-      internalID: -684706997
+      spriteID: 378ba110f98a0384aa806d2b7934275f
+      internalID: -152133107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: effects_explosion_5
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07156e2cb1fa2884da7592be21833bf7
+      internalID: 613063304
       vertices: []
       indices: 
       edges: []
@@ -209,7 +238,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: fa9c0064a32091b4097fddaac7e73206
+    spriteID: 18a5ac9670e012746bf46f1dae5b82d7
     internalID: 0
     vertices: []
     indices: 
@@ -217,10 +246,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      gunner_damage_placeholder_0: -1742851362
-      gunner_damage_placeholder_1: 1938806559
-      gunner_damage_placeholder_2: 877409341
-      gunner_damage_placeholder_3: -684706997
+      effects_explosion_0: 1944787243
+      effects_explosion_1: -453822090
+      effects_explosion_2: 238042535
+      effects_explosion_3: 1330207876
+      effects_explosion_4: -152133107
+      effects_explosion_5: 613063304
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

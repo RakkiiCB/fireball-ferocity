@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5c90f995170a29948ba6544a23b0ee70
+guid: 9d57566d041505c45ace6b0448597126
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -123,85 +123,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: gunner_damage_placeholder_0
+      name: impulse_run_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 180
-        width: 180
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 03d4a20f68f1c6d408c433d7838c239a
-      internalID: -1742851362
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gunner_damage_placeholder_1
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 180
-        width: 180
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3284970f61314c44882b3f88e833e653
-      internalID: 1938806559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gunner_damage_placeholder_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 180
-        height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d500915a6fc2bb54d8aae473b03a8d1f
-      internalID: 877409341
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: gunner_damage_placeholder_3
-      rect:
-        serializedVersion: 2
-        x: 180
-        y: 0
-        width: 180
-        height: 180
+        y: 144
+        width: 172
+        height: 144
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.47, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c7d57a7ac204c4489d35364c2542cfa
-      internalID: -684706997
+      spriteID: 2be9582b344c2814ab922a90b932c26b
+      internalID: 520667224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impulse_run_1
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 144
+        width: 172
+        height: 144
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0687894c79c4e438c1a40284ec26ed
+      internalID: -1252493853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impulse_run_2
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 144
+        width: 172
+        height: 144
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a0fe0b7c51bfcf4baff207c1e788ca9
+      internalID: -234014004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impulse_run_3
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 144
+        width: 172
+        height: 144
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3049ea01be48842bfa015b745c488a
+      internalID: -588769577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impulse_run_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 172
+        height: 144
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279cb83ea9290e44fb10b4bfe9847ee4
+      internalID: -2136304131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impulse_run_5
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 0
+        width: 172
+        height: 144
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140ef28e40b1ce4448d1f96a3d606b9b
+      internalID: 742649902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impulse_run_6
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 0
+        width: 172
+        height: 144
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7c9d543e966a24e946887cb19f9846
+      internalID: 2030253661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: impulse_run_7
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 0
+        width: 172
+        height: 144
+      alignment: 9
+      pivot: {x: 0.47, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b85d7a7d8d9c3e49bac9cfcee632acb
+      internalID: 598461010
       vertices: []
       indices: 
       edges: []
@@ -209,7 +293,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: fa9c0064a32091b4097fddaac7e73206
+    spriteID: 85e9391bb3dd3734fbb100f9f9d74fa0
     internalID: 0
     vertices: []
     indices: 
@@ -217,10 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      gunner_damage_placeholder_0: -1742851362
-      gunner_damage_placeholder_1: 1938806559
-      gunner_damage_placeholder_2: 877409341
-      gunner_damage_placeholder_3: -684706997
+      impulse_run_0: 520667224
+      impulse_run_1: -1252493853
+      impulse_run_2: -234014004
+      impulse_run_3: -588769577
+      impulse_run_4: -2136304131
+      impulse_run_5: 742649902
+      impulse_run_6: 2030253661
+      impulse_run_7: 598461010
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
