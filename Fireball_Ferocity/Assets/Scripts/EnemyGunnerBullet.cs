@@ -44,5 +44,22 @@ public class EnemyGunnerBullet : MonoBehaviour
             
             
         }
+        else
+        {
+            Destroy(gameObject);
+        }
+        /*
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            // Destroy the bullet when it hits the ground
+            Destroy(gameObject);
+        }
+
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            // Destroy the bullet when it hits the ground
+            Destroy(gameObject);
+        }
+        */
     }
 }

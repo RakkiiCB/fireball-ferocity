@@ -1,54 +1,52 @@
-using System;
-using UnityEditor.Presets;
 using UnityEngine;
-using static UnityEditor.PlayerSettings;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float speed;
-    private Rigidbody2D body;
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private LayerMask groundLayer;
+
     private Animator anim;
     private bool grounded;
-    private bool isFalling; // Parameter to track falling
-    private bool isLanding; // Parameter to track landing
-    private bool isHurt; // Parameter to track if player is taking damage
+    private bool isFalling;
+    private bool isLanding;
+    private float horizontal;
+    private float speed = 8f;
+    private float jumpingPower = 16f;
 
     private void Awake()
     {
-        // Grabs references for rigidbody and animator from game object
         anim = GetComponent<Animator>();
-        body = GetComponent<Rigidbody2D>();
-        // Lock the Z-axis rotation to keep the object upright.
-        body.constraints = RigidbodyConstraints2D.FreezeRotation;
+        rb.constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 
-    private void Update()
+    void Update()
     {
-        float horizontalInput = Input.GetAxis("Horizontal");
-        body.velocity = new Vector2(horizontalInput * speed, body.velocity.y);
-
-        // Flip player when facing left/right.
-        if (horizontalInput > 0.01f)
-            transform.localScale = Vector3.one;
-        else if (horizontalInput < -0.01f)
-            transform.localScale = new Vector3(-1, 1, 1);
+        horizontal = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetKeyDown(KeyCode.Space) && grounded)
-            Jump();
+        {
+            rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            anim.SetTrigger("jump");
+            grounded = false;
+        }
 
-        // Check if the player is falling
-        isFalling = body.velocity.y < 0;
+        if (Input.GetKeyDown(KeyCode.Space) && rb.velocity.y > 0f)
+        {
+            rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
+        }
 
-        // Set animation parameters
-        anim.SetBool("run", horizontalInput != 0);
+        Flip();
+
+        isFalling = rb.velocity.y < 0;
+
+        anim.SetBool("run", horizontal != 0);
         anim.SetBool("grounded", grounded);
         anim.SetBool("falling", isFalling);
 
-        // Handle landing logic
         if (isFalling && !isLanding)
         {
-            // Transition to landing state
-            anim.ResetTrigger("jump"); // Reset jump trigger if it was set
+            anim.ResetTrigger("jump");
             anim.SetTrigger("land");
             isLanding = true;
         }
@@ -57,15 +55,28 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.Z) ||
             Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.X))
         {
-            Attack(); 
+            Attack();
         }
     }
 
-    private void Jump()
+    private void FixedUpdate()
     {
-        body.velocity = new Vector2(body.velocity.x, speed);
-        anim.SetTrigger("jump");
-        grounded = false;
+        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+    }
+
+    private void Flip()
+    {
+        float horizontalInput = Input.GetAxis("Horizontal");
+
+        if (horizontalInput > 0.01f)
+            transform.localScale = Vector3.one;
+        else if (horizontalInput < -0.01f)
+            transform.localScale = new Vector3(-1, 1, 1);
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 
     private void Attack()
@@ -80,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            
+
             if (Input.GetKeyDown(KeyCode.Q) || Input.GetKeyDown(KeyCode.Z))
                 anim.SetTrigger("LightAttackAir");
             else if (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.X))
@@ -93,7 +104,7 @@ public class PlayerMovement : MonoBehaviour
         if (collision.gameObject.tag == "Ground")
         {
             grounded = true;
-            isLanding = false; // Reset landing when grounded
+            isLanding = false;
         }
     }
 }
