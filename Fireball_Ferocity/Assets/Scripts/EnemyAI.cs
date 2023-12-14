@@ -1,4 +1,6 @@
+
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -7,10 +9,14 @@ public class EnemyAI : MonoBehaviour
     public float attackRange = 2f;
     public float attackCooldown = 2.0f; // Time between attacks
     public float chaseDistance = 10f; // Maximum chase distance
+    public float damage = 5f; // Damage value 
+    public LayerMask whatIsEnemies;
 
     private Animator animator;
     private bool isChasing = false;
     private float lastAttackTime = 0f;
+    public Transform attackPos; 
+    
     private EnemyShooting enemyShooting; // Reference to the EnemyShooting component
 
     private void Start()
@@ -110,10 +116,27 @@ public class EnemyAI : MonoBehaviour
         // Play attack animations and deal damage to the player.
         animator.SetTrigger("Attack");
 
-        // Call the shooting function in the EnemyShooting script.
-        enemyShooting.ShootOnAttack();
+        // Check if the enemy has a shooting component.
+        if (enemyShooting != null)
+        {
+            // Call the shooting function in the EnemyShooting script.
+            enemyShooting.ShootOnAttack();
+        }
+        else
+        {
+            Collider2D[] targetPlayer = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatIsEnemies);
+            for (int i = 0; i < targetPlayer.Length; i++)
+            {
+                targetPlayer[i].GetComponent<PlayerHealth>().health -= damage;
+            }
+        }
 
         // Update the last attack time.
         lastAttackTime = Time.time;
+    }
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPos.position, attackRange);
     }
 }
